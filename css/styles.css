@@ -346,6 +346,7 @@ svg {
   padding-left: 35px;
   height: 40px;
   width: 100%;
+  outline: none;
 }
 
 .form-icon {
@@ -356,8 +357,15 @@ svg {
 }
 
 .form-input:focus + .form-icon {
-  /* fill: var(--accent-color); */
-  background-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.form-input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.form-group:focus-within {
+  border: var(--accent-color);
 }
 
 .form-group textarea {
@@ -369,6 +377,50 @@ svg {
   letter-spacing: 0.01em;
   line-height: 1.17;
   font-size: 12px;
+}
+
+.form-check {
+  margin-bottom: 30px;
+  color: var(--primary-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.check-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url('../images/check.svg');
+  background-size: contain;
+  background-origin: border-box;
 }
 
 /* sections */
