@@ -333,13 +333,14 @@ svg {
 
 .form-group label {
   margin-right: auto;
+  margin-bottom: 4px;
 }
 
 .input-thumb {
+  position: relative;
 }
 
 .form-input {
-  position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 35px;
@@ -349,13 +350,14 @@ svg {
 
 .form-icon {
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
-.form-group input {
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
+.form-input:focus + .form-icon {
+  /* fill: var(--accent-color); */
+  background-color: var(--accent-color);
 }
 
 .form-group textarea {

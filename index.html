@@ -65,9 +65,9 @@
                     
                      <form class="form">
                         <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+
                          <div class="form-group">
                             <label for="name">Имя</label>
-                            
                                  <div class="input-thumb">
                                     <input type="text" class="form-input" name="name" id="name"/>                            
                                     <svg class="form-icon" width="18" height="18">
@@ -75,18 +75,32 @@
                                 </svg>
                             </div>
                          </div>
+
                         <div class="form-group">
                             <label for="tel">Телефон</label>
-                            <input type="tel" name="tel" id="tel" />
+                            <div class="input-thumb">
+                                <input type="tel" class="form-input" name="tel" id="tel" />
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./images/symbol-defs1.svg#fone"></use>
+                                </svg>
+                            </div>
                         </div>
+
                         <div class="form-group">
                             <label for="mail">Почта</label>
-                            <input type="mail" name="mail" id="mail" />
+                            <div class="input-thumb">
+                                <input type="mail" class="form-input" name="mail" id="mail" />
+                                <svg class="form-icon" width="18" height="18">
+                                    <use href="./images/symbol-defs1.svg#email"></use>
+                                </svg>
+                            </div>                          
                         </div>
+
                         <div class="form-group">
                             <label for="comment">Комментарий</label>
                             <textarea name="comment" id="comment" placeholder="Введите текст" class="texterea"></textarea>
                         </div>
+
                         <div class="form-group">
                             <input type="checkbox" name="policy" id="policy" />
                             <label for="policy">Соглашаюсь с рассылкой и принемаю Условия договора</label>
