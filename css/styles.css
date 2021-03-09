@@ -423,9 +423,22 @@ svg {
 .check-input:checked + .icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url('../images/symbol-defs1.svg#check');
+  background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
+}
+
+.form-link {
+  color: var(--accent-color);
+  margin-left: 4px;
+  font-size: 14px;
+  line-height: 1.71px;
+}
+
+.form-text {
+  font-size: 14px;
+  line-height: 1.71px;
+  color: var(--primary-text-color);
 }
 
 /* sections */
